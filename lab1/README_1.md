@@ -17,6 +17,41 @@ This project uses an ESP32 to track temperature, send updates to your phone via 
 ### Wiring
 <img width="767" height="477" alt="image" src="https://github.com/user-attachments/assets/908d7626-79da-46ae-b6b6-fd1c8c0e89ec" />
 
+### Telegram Bot Setup
+
+#### Step 1: Create Telegram Bot
+1. **Open Telegram** and search for `@BotFather`
+2. **Start chat** with BotFather and send `/newbot`
+3. **Choose bot name** (e.g., "MyESP32Bot")
+4. **Choose username** (must end with 'bot', e.g., "myesp32_bot")
+5. **Copy the bot token** (format: `123456789:ABCdefGHIjklMNOpqrsTUVwxyz`)
+
+#### Step 2: Get Group Chat ID
+1. **Create a Telegram group** or use existing one
+2. **Add your bot** to the group
+3. **Add @myidbot** in the group
+4. **Start chat**: with @myidbot and send /getgroupid@myidbot 
+5. **Find your group chat ID** (negative number like `-1234567890`)
+
+### Software Configuration
+
+#### Configure Code Settings
+Edit the configuration in `main.py`:
+```python
+# -------- SETTINGS --------
+SSID = "YourWIFI"
+PASSWORD = "YourWIFIPassword"
+
+BOT_TOKEN = "YourBOT_TOKEN"
+CHAT_ID = "YourCHAT_ID"
+```
+#### Upload the Code
+1. **Connect ESP32** to a computer's USB port
+2. **Use Thonny IDE** or similar tool
+3. **Upload** `main.py` to ESP32
+4. **Reset** ESP32 to start program
+
+
 ## Task 1-Sensor Read & Print
 • Read DHT22 every 5 seconds and print the temperature and humidity with 2 
 decimals. </br>
