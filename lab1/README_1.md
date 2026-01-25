@@ -40,7 +40,7 @@ received.  </br>
 a one-time “auto-OFF” notice.  </br>
 • The demonstration video is [HERE](https://youtu.be/EPEahFAGosI?si=evPU2CnT-OClJXCK)
 
-## Task 6 Flowcchart 
+## Task 6 Flowchart 
 ```mermaid
   flowchart LR
       Start([Start]) --> Read[Read DHT11]
