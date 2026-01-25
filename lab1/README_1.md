@@ -78,7 +78,7 @@ a one-time “auto-OFF” notice.  </br>
 ## Task 6 Flowchart 
 ```mermaid
   flowchart LR
-      Start([Start]) --> Read[Read DHT11]
+      Start([Start]) --> Read[Read DHT22]
       Read --> T{T≥30°C?}
       T -->|No| Wait[Wait 5s]
       T -->|Yes| R{Relay OFF?}
