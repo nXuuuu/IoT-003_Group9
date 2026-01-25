@@ -1,6 +1,22 @@
 # 🤖LAB1: Temperature Sensor with Relay Control (Telegram) 
 Lab instruction is [HERE](https://theara-seng.github.io/files/IOT/lab1.pdf)
 
+## 🧰Overview
+This project uses an ESP32 to track temperature, send updates to your phone via Telegram, and manage a relay automatically or by hand.
+### Features
+• Constant Tracking: Checks the temperature every 5 seconds using a DHT22 sensor.</br>
+• Telegram Alerts: The system texts you updates and lets you send back commands.</br>
+• Auto & Manual Control: The switch turns on/off based on the heat, but you can also control it yourself remotely.</br>
+### Equipments
+• ESP32 Dev Board (MicroPython firmware flashed) </br>
+• DHT22 sensor </br>
+• Relay module </br>
+• jumper wires </br>
+• USB cable + laptop with Thonny </br>
+• Wi-Fi access (internet) </br>
+### Wiring
+<img width="767" height="477" alt="image" src="https://github.com/user-attachments/assets/908d7626-79da-46ae-b6b6-fd1c8c0e89ec" />
+
 ## Task 1-Sensor Read & Print
 • Read DHT22 every 5 seconds and print the temperature and humidity with 2 
 decimals. </br>
