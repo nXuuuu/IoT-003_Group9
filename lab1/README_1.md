@@ -40,6 +40,36 @@ received.  </br>
 a one-time “auto-OFF” notice.  </br>
 • The demonstration video is [HERE](https://youtu.be/EPEahFAGosI?si=evPU2CnT-OClJXCK)
 
+## Task 6 Flowcchart 
+```mermaid
+  flowchart LR
+      Start([Start]) --> Read[Read DHT11]
+      Read --> T{T≥30°C?}
+      T -->|No| Wait[Wait 5s]
+      T -->|Yes| R{Relay OFF?}
+      R -->|No| Wait
+      R -->|Yes| Alert[Alert: Turn ON]
+      Alert --> Cmd{/on?}
+      Cmd -->|No| Alert
+      Cmd -->|Yes| On[Relay ON]
+      On --> Mon[Monitor]
+      Mon --> Drop{T<30°C?}
+      Drop -->|No| Mon
+      Drop -->|Yes| Off[Auto OFF]
+      Off --> Notice[Notice Sent]
+      Notice --> Wait
+      Wait --> Start
+      
+      style Start fill:#90EE90
+      style T fill:#FFD700
+      style R fill:#FFD700
+      style Drop fill:#FFD700
+      style On fill:#FF6B6B
+      style Off fill:#4ECDC4
+      style Alert fill:#FFA07A
+      style Notice fill:#98D8C8
+```
+
 
 
 
