@@ -48,6 +48,15 @@ print("Web server running...")
 # ==============================
 # HTML PAGE WITH LED STATUS
 # ==============================
+
+def scroll(text, row=0, width=16, delay=0.3):
+    padded=" " * width + text + " " * width
+    
+    for i in range(len(padded) - width):
+        lcd.move_to(0, row)
+        lcd.putstr(padded[i:i+width])
+        time.sleep(delay)
+        
 def web_page(state,temp, distance):
     if state:
         color = "green"
@@ -99,10 +108,6 @@ def web_page(state,temp, distance):
         <div>
             <a href="/distance"><button>Distance</button></a>
             <a href="/temperature"><button>Temperature</button></a>
-        </div>
-        <div>
-            <input id="user_text" type = "text"/>
-            <button id="send_button">Send</button>
         </div>
         
         <form action="http://{ip}/" method="POST">
@@ -198,12 +203,14 @@ while True:
         lcd.putstr(out)
  
   
-    body = request.split("\r\n\r\n",1)[1]
-    ut = body.split("=",1)[1]
-    if us:
-      lcd.clear()
-      lcd.move_to(0,0)
-      lcd.putstr(ut)
+    try:
+        body = request.split("\r\n\r\n",1)[1]
+        ut = body.split("=",1)[1]
+        if ut:
+          lcd.clear()
+          scroll(ut)
+    except:
+        print("LCD Error")
 
   
     response = web_page(led_state,temperature, distance)
