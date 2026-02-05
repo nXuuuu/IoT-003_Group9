@@ -42,3 +42,45 @@ By focusing on event-driven IoT design, we will gain hands-on experience in maki
 • User enters custom text → LCD displays it (scroll if >16 chars).  <br>
 • Video link is <a href="https://youtube.com/shorts/7-j0wPhD0Rk?si=Z3Fr2QL3oJA7VomG"> CLICK ME </a>
 <br>
+### Diagram
+```mermaid
+flowchart LR
+    Start([START]) --> Init1["Initialize I2C LCD<br/>SDA=Pin21, SCL=Pin22<br/>Address: 0x27, 2x16 display"]
+    Init1 --> Init2["Initialize Ultrasonic Sensor<br/>TRIG=Pin27, ECHO=Pin26"]
+    Init2 --> Main2["Execute main2()"]
+    Main2 --> While{"While True"}
+    While --> Scroll["scroll_lr() function<br/>Text: 'fuck thiefland!'<br/>Width=16, Row=0, Delay=0.1s"]
+    Scroll --> Prepare["Prepare padded string:<br/>spaces + text + spaces"]
+    Prepare --> ForLoop{"For each<br/>position"}
+    ForLoop -->|Yes| MoveCursor["Move LCD cursor<br/>to (0, row)"]
+    MoveCursor --> Display["Display 16-char<br/>window of text"]
+    Display --> Delay1["Sleep 0.1s"]
+    Delay1 --> Delay2["Sleep 0.1s"]
+    Delay2 --> LoopBack["Continue"]
+    LoopBack --> ForLoop
+    ForLoop -->|Done| LoopBack2["Scroll Complete"]
+    LoopBack2 --> While
+    
+    %% Alternative main1 function - shown as note
+    Main1[main1 - UNUSED<br/>1. Clear LCD<br/>2. Display 'Distance:'<br/>3. Call get_distance_m<br/>4. Display result or 'Out of range'<br/>5. Sleep 2s<br/>6. Repeat]
+    
+    %% Helper function
+    GetDist[get_distance_m<br/>1. Send 10µs trigger pulse<br/>2. Measure echo duration<br/>3. Calculate distance:<br/>d = duration × 0.0343/2/100<br/>4. Return distance in meters<br/>or None if timeout]
+    
+    %% Styling with visible text colors
+    classDef terminator fill:#e8f5e9,stroke:#388e3c,stroke-width:3px,color:#000000
+    classDef process fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000000
+    classDef function fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000000
+    classDef decision fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#000000
+    classDef unused fill:#fffde7,stroke:#f9a825,stroke-width:3px,stroke-dasharray: 5 5,color:#000000
+    classDef helper fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px,stroke-dasharray: 5 5,color:#000000
+    classDef loopNode fill:#ffebee,stroke:#c62828,stroke-width:3px,color:#000000
+    
+    class Start terminator
+    class Init1,Init2,Prepare,MoveCursor,Display,Delay1,Delay2 process
+    class Main2,Scroll function
+    class While,ForLoop decision
+    class Main1 unused
+    class GetDist helper
+    class LoopBack,LoopBack2 loopNode
+```
