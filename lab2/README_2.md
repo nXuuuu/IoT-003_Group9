@@ -22,12 +22,28 @@ By focusing on event-driven IoT design, we will gain hands-on experience in maki
 ### Wiring
 <img width="1447" height="726" alt="image" src="https://github.com/user-attachments/assets/9cb466df-2b4b-4e00-8303-4e24ed74069d" />
 
-### Set Up
-...
+## Set Up
+### Wi-Fi Set Up
+ssid = "Robotic WIFI" <br>
+password = "rbtWIFI@2025" <br>
+The ESP32 connects to Wi-Fi in station mode.
+### Running the Server
+1. Run the script on the ESP32
+2. Open the Serial Monitor
+3. Copy the printed IP address
+4. Paste the IP address in a browser and go
+### Sensor Readings
+1. Distance Button
+  - Reads distance from the ultrasonic sensor
+  - Displays the value on the web page and LCD
+2. Temperature Button
+  - Reads temperature from the DHT22 sensor
+  - Displays the value on the web page and LCD
+   
 ## Task 1 - LED Control
 • Add two buttons (ON/OFF) on the web page. <br>
 • When clicked, LED on GPIO2 should turn ON or OFF. <br>
-• Video link is [HERE]()
+• Video link is [HERE](https://youtube.com/shorts/arqVigQ9qr8?si=sgscMslc7OSgIkBi)
 ## Task 2 - Sensor Read
 • Read DHT11 temperature and ultrasonic distance.  <br>
 • Show values on the web page (refresh every 1-2 seconds).  <br>
@@ -38,6 +54,7 @@ By focusing on event-driven IoT design, we will gain hands-on experience in maki
   - Show Temp → writes temperature to LCD line 2. 
 <img width="1225" height="1280" alt="image" src="https://github.com/user-attachments/assets/8a36922c-e937-4aed-ae56-6513e76ea0da" /> <br>
 ## Task 4 - Textbox → LCD
+• Please download these 2 files for LCD to run [LCD API Library](https://github.com/Theara-Seng/iot_micropython/blob/main/session5/lcd/lib/lcd_api.py) & [Machine i2c LCD Library](https://github.com/Theara-Seng/iot_micropython/blob/main/session5/lcd/lib/machine_i2c_lcd.py) <br>
 • Add a textbox + “Send” button on the web page. <br> 
 • User enters custom text → LCD displays it (scroll if >16 chars).  <br>
 • Video link is <a href="https://youtube.com/shorts/7-j0wPhD0Rk?si=Z3Fr2QL3oJA7VomG"> CLICK ME </a>
