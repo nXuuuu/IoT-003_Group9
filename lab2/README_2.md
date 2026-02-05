@@ -40,4 +40,5 @@ By focusing on event-driven IoT design, we will gain hands-on experience in maki
 ## Task 4 - Textbox → LCD
 • Add a textbox + “Send” button on the web page. <br> 
 • User enters custom text → LCD displays it (scroll if >16 chars).  <br>
-• Video link is [HERE]() <br>
+• Video link is <a href="https://youtube.com/shorts/7-j0wPhD0Rk?si=Z3Fr2QL3oJA7VomG"> CLICK ME </a>
+<br>
