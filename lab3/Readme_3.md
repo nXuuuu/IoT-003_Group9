@@ -111,7 +111,7 @@ Watch the demo video [HERE](https://youtube.com/shorts/rctSG3n23fk?si=bo708k--j-
 - Toggle the switch (V4) in Blynk app
 - **Manual Mode (ON)**: IR sensor is ignored, counter doesn't increment
 - **Automatic Mode (OFF)**: IR sensor active, normal operation resumes <br>
-Watch the demo video [HERE](https://youtube.com/shorts/rctSG3n23fk?si=bo708k--j-2ZKF2F).
+Watch the demo video [HERE](https://youtube.com/shorts/9Ho65accz5U?si=cKjMJkisCjSfI1VX).
 
 ## Code Structure
 
