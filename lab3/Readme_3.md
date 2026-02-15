@@ -85,19 +85,19 @@ BLYNK_TOKEN = "Your_Blynk_Auth_Token"
 - The system continuously reads the IR sensor
 - Status is displayed on Blynk app (V0 and V1)
 - "Detected" appears when an object is in front of the sensor <br>
-Watch the demo video [HERE](#).
+Watch the demo video [HERE]().
 
 ### Task 2: Manual Servo Control
 - Use the Blynk slider (V2) to control servo position
 - Range: 0° to 180°
 - Servo moves in real-time with slider changes <br>
-Watch the demo video [HERE](#).
+Watch the demo video [HERE](https://youtube.com/shorts/AevJjuhg4zk?si=W8ba5XsR6YgpDwht).
 
 ### Task 3: Automatic Gate Operation
 - When IR sensor detects an object, servo automatically rotates to 180° (gate opens)
 - After 2-second delay, servo returns to 0° (gate closes)
 - Fully automatic response to detection <br>
-Watch the demo video [HERE](#).
+Watch the demo video [HERE](https://youtube.com/shorts/23EK4_0-hws?si=HIqal6pPDDeOj3kM).
 
 ### Task 4: Event Counting with Display
 - Each IR detection increments a counter
@@ -105,13 +105,13 @@ Watch the demo video [HERE](#).
   - TM1637 local display
   - Blynk app (V3)
 - Both displays show synchronized values<br>
-Watch the demo video [HERE](#).
+Watch the demo video [HERE](https://youtube.com/shorts/rctSG3n23fk?si=bo708k--j-2ZKF2F).
 
 ### Task 5: Manual Override Mode
 - Toggle the switch (V4) in Blynk app
 - **Manual Mode (ON)**: IR sensor is ignored, counter doesn't increment
 - **Automatic Mode (OFF)**: IR sensor active, normal operation resumes <br>
-Watch the demo video [HERE](#).
+Watch the demo video [HERE](https://youtube.com/shorts/rctSG3n23fk?si=bo708k--j-2ZKF2F).
 
 ## Code Structure
 
