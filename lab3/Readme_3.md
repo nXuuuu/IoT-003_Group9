@@ -85,7 +85,8 @@ BLYNK_TOKEN = "Your_Blynk_Auth_Token"
 - The system continuously reads the IR sensor
 - Status is displayed on Blynk app (V0 and V1)
 - "Detected" appears when an object is in front of the sensor <br>
-Watch the demo video [HERE]().
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/131565c8-ffc3-4af3-868a-0cd3c4aa7ad6" />
+
 
 ### Task 2: Manual Servo Control
 - Use the Blynk slider (V2) to control servo position
