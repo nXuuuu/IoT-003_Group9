@@ -6,8 +6,8 @@ import urequests as requests
 import math
 
 # ---------- CONFIG ----------
-WIFI_SSID = "Bunchhith Vesna02"
-WIFI_PASS = "vs22224444"
+WIFI_SSID = "AUPP Wifi"
+WIFI_PASS = ""
 
 BLYNK_TOKEN = "AXLHua5Akq9qdlm3L9z4dTcq0-QaA8MF"
 BLYNK_API   = "http://blynk.cloud/external/api"
