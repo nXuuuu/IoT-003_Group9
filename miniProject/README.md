@@ -22,6 +22,7 @@
 6. [Working Process Explanation](#6-working-process-explanation)
 7. [Challenges Faced](#7-challenges-faced)
 8. [Future Improvements](#8-future-improvements)
+9. [Demo](#9-demo)
 
 ---
 
@@ -361,6 +362,9 @@ Inconsistent WiFi speed caused Telegram polling and Blynk updates to lag. Addres
 - **Cloud data logging** — Log occupancy events and sensor readings to a database for historical analytics.
 
 ---
+
+## 9. Demo
+Click [HERE](https://youtu.be/OkFWMrc7I5Y?si=t1ykJbIh-D1QpMMS) to watch the system demonstration video.
 
 ## File Structure
 
