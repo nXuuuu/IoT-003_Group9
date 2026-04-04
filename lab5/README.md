@@ -99,7 +99,7 @@ The companion mobile app provides:
 2. Open **Thonny IDE** and connect to the ESP32 via USB.
 3. Upload `main.py` to the ESP32's root directory.
 4. Run `main.py` — the system will start reading sensor data immediately.
-5. Open MIT App Iventor website and import the `lab5_app.aia` as a new project.
+5. Open MIT App Inventor website and import the `lab5_app.aia` as a new project.
 7. Install the MIT App Inventor app on your Android device and connect to the ESP32.
 8. Use the app to monitor color detection and send manual control commands.
 
