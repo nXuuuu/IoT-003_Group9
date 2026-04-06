@@ -116,4 +116,4 @@ The companion mobile app provides:
 
 ## Demo
 
-Watch the demonstration video [HERE]().
+Watch the demonstration video [HERE](https://youtube.com/shorts/HjuWAQmwzJ4?si=HQNVr7PSH_oHNaxc).
