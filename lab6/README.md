@@ -70,3 +70,29 @@ Each document contains the fields:
 | datetime    | string |
 
 ---
+
+## Flowchart
+```mermaid
+  flowchart TD
+    A([Start]) --> B[Init Wi-Fi · SD · RFID]
+    B --> C[Wait for card]
+    C --> D{Card detected?}
+    D -- No --> C
+    D -- Yes --> E[Read UID]
+    E --> F{UID in DB?}
+
+    F -- Yes --> H[Buzz 0.3 s]
+    H --> I[Save CSV to SD]
+    I --> J[Send to Firestore]
+    J --> K
+
+    F -- No --> M[Buzz 3 s]
+    M --> N[Display: Unknown Card]
+    N --> K
+
+    K[Wait 1 s] --> C
+```
+---
+
+## Demo
+Watch the demo video [HERE](https://youtube.com/shorts/XH15WrsqP2A?si=evbjc12V1XGwkeqo).
