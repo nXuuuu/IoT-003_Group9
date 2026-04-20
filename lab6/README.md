@@ -52,7 +52,6 @@ Cards are scanned, matched against a student database, logged locally to an SD c
 
 ```
 UID,Name,StudentID,Major,DateTime
-A1B2C3D4,Alice Johnson,S001,Computer Engineering,2025-06-10 08:03:21
 ```
 
 ---
