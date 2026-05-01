@@ -260,3 +260,7 @@ ESP32-CAM: HTTPS POST to Telegram API
     ↓
 📨 Photo appears in your Telegram group!
 ```
+---
+## Demo Video 
+Watch the demo video [HERE](https://youtube.com/shorts/_muc3ei5o-0?si=rfqwXHRDBCjfRpQS).
+
