@@ -262,5 +262,6 @@ ESP32-CAM: HTTPS POST to Telegram API
 ```
 ---
 ## Demo Video 
-Watch the demo video [HERE](https://youtube.com/shorts/_muc3ei5o-0?si=rfqwXHRDBCjfRpQS).
+Watch the demo video [HERE](https://youtube.com/shorts/_muc3ei5o-0?si=rfqwXHRDBCjfRpQS). <br>
+Presentation and demo video [HERE](https://youtu.be/pdGbZTsl7lE)
 
