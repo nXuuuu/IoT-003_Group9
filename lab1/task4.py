@@ -6,8 +6,8 @@ import dht
 import gc
 
 # -------- SETTINGS --------
-SSID = "Robotic WIFI"
-PASSWORD = "rbtWIFI@2025"
+SSID = ""
+PASSWORD = ""
 
 BOT_TOKEN = ""
 CHAT_ID = ""
