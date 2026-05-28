@@ -20,8 +20,8 @@ led_state = False  # False = OFF, True = ON
 # ==============================
 # WIFI SETUP (Station Mode)
 # ==============================
-ssid = "Robotic WIFI"
-password = "rbtWIFI@2025"
+ssid = ""
+password = ""
 
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
