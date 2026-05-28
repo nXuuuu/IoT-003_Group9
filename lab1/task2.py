@@ -4,11 +4,11 @@ import time
 from machine import Pin
 
 # -------- SETTINGS --------
-SSID = "Robotic WIFI"
-PASSWORD = "rbtWIFI@2025"
+SSID = ""
+PASSWORD = ""
 
-BOT_TOKEN = "8560404304:AAFCai6tF2wOeMKD-DyZhAi1Rim-c8BLxtA"
-CHAT_ID = "-5282582385"
+BOT_TOKEN = ""
+CHAT_ID = ""
 
 # -------- WIFI --------
 wifi = network.WLAN(network.STA_IF)
